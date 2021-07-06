@@ -28,9 +28,9 @@ public class ResumeGameProcessImpl implements Process {
 
     @Override
     public void startProcess(Scanner scanner) {
-        FighterBo fighterBo = FighterRepository.read();
+        FighterBo fighterBo = FighterRepository.readFighter();
         Set<EvilBo> evils = evilService.buildEvilsCharacter();
-        String [] [] layout = layoutService.buildLayout(fighterBo, evils);
+        String [] [] layout = FighterRepository.readLayout();
 
         playService.play(scanner, fighterBo, evils, layout);
     }

@@ -3,12 +3,12 @@ package com.tarabut.puzzle.test;
 import com.tarabut.puzzle.bo.FighterBo;
 import com.tarabut.puzzle.enums.Gender;
 import com.tarabut.puzzle.enums.Level;
-import com.tarabut.puzzle.repository.FighterRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static com.tarabut.puzzle.repository.FighterRepository.*;
+import static com.tarabut.puzzle.repository.FighterRepository.readFighter;
+import static com.tarabut.puzzle.repository.FighterRepository.saveFighter;
 
 public class FighterRepositoryTest {
 
@@ -29,13 +29,15 @@ public class FighterRepositoryTest {
 
     @Test
     public void whenWriteFighterObjectOnFile_ThenShouldReturnSuccess() {
-        save(fighterBo);
+        String [][] layout = new String[50][50];
+        saveFighter(fighterBo);
     }
 
     @Test
     public void whenReadFighterObjectOnFile_ThenShouldReturnSuccess() {
-        save(fighterBo);
-        FighterBo fighterBo = read();
+        String [][] layout = new String[50][50];
+        saveFighter(fighterBo);
+        FighterBo fighterBo = readFighter();
         Assert.assertNotNull(fighterBo);
     }
 }

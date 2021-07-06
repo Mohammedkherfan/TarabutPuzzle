@@ -85,7 +85,7 @@ public class PlayServiceImpl implements PlayService {
                 checkAttribute(fighter);
             } break;
             case SAVE_GAME: {
-                saveGame(fighter);
+                saveGame(fighter, layout);
             } break;
             case EXIST_GAME: {
                 System.out.println(String.format(PuzzleConstants.MISSION_COMPLETE));
@@ -95,8 +95,9 @@ public class PlayServiceImpl implements PlayService {
 
     }
 
-    private void saveGame(FighterBo fighter) {
-        FighterRepository.save(fighter);
+    private void saveGame(FighterBo fighter, String[][] layout) {
+        FighterRepository.saveFighter(fighter);
+        FighterRepository.saveLayout(layout);
         System.out.println(PuzzleConstants.SAVED_SUCCESSFULLY);
     }
 
