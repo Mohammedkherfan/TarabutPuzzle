@@ -26,8 +26,8 @@ public class PlayServiceImpl implements PlayService {
 
     @Override
     public void play(Scanner scanner, FighterBo fighter, Set<EvilBo> evils, String[][] layout) {
+        layoutService.print(layout);
         while (missionComplete) {
-            layoutService.print(layout);
             PuzzleMessages.callPuzzlePlayOperation();
             scanner.reset();
 
@@ -212,7 +212,9 @@ public class PlayServiceImpl implements PlayService {
                 System.out.println(PuzzleConstants.GAME_OVER);
                 System.exit(0);
             }
-            System.out.println("You Killed Evil" + evilBo.getName());
+            System.out.println(PuzzleConstants.SPACE);
+            System.out.println(PuzzleConstants.KILLED+ evilBo.getName());
+            System.out.println(PuzzleConstants.SPACE);
             fighterBo.setExperienceValue(fighterBo.getExperienceValue()+10);
             fighterBo.setAttack(fighterBo.getAttack()+5);
             fighterBo.setHealth(fighterBo.getHealth()+5);

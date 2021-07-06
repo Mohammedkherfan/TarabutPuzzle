@@ -44,4 +44,5 @@ public class PuzzleConstants {
     public static final String SHOOT_ATTACK = "Shoot (1)";
     public static final String DEFENSE_ATTACK = "Defense (2)";
     public static final String GAME_OVER = "Game Over";
+    public static final String KILLED = "You Killed Evil " ;
 }
