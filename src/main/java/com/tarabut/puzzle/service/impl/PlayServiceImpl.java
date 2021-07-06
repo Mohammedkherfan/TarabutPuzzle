@@ -107,7 +107,6 @@ public class PlayServiceImpl implements PlayService {
     private void createPlayOperation(Scanner scanner, FighterBo fighter, Set<EvilBo> evils, String[][] layout, PlayOperation playOperation) {
         switch (playOperation) {
             case MOVE_FORWARD: {
-                System.out.println("X="+fighter.getxPosition()+"------"+"Y="+fighter.getyPosition());
                 Boolean result = checkLayoutPosition(layout, fighter.getxPosition() -1, fighter.getyPosition());
                 if (result) {
                     String opponent = findOpponent(layout, fighter.getxPosition() -1, fighter.getyPosition());
@@ -308,7 +307,6 @@ public class PlayServiceImpl implements PlayService {
     }
 
     private Boolean checkLayoutPosition(String[][] layout, Integer xPosition, Integer yPosition) {
-        System.out.println(layout[xPosition][yPosition]);
         if (layout[xPosition][yPosition] == "/" || layout[xPosition][yPosition] == "-" || layout[xPosition][yPosition] == "_")
             return Boolean.FALSE;
         else
