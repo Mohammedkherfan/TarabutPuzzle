@@ -14,7 +14,7 @@ public class EvilRepository {
         set.add(new EvilBo("Evil2", 20, 20, 20, 10, new Random().nextInt((45 - 1) + 1) , new Random().nextInt((45 - 1) + 1)));
         set.add(new EvilBo("Evil3", 30, 30, 11, 15, new Random().nextInt((45 - 1) + 1) , new Random().nextInt((45 - 1) + 1)));
         set.add(new EvilBo("Evil4", 44, 40, 22, 35, new Random().nextInt((45 - 1) + 1) , new Random().nextInt((45 - 1) + 1)));
-        set.add(new EvilBo("Evil5", 70, 22, 65, 55, new Random().nextInt((45 - 1) + 1) , new Random().nextInt((45 - 1) + 1)));
+        set.add(new EvilBo("Evil5", 70, 22, 65, 55, 48 , 5));
         set.add(new EvilBo("Evil6", 66, 50, 50, 75, new Random().nextInt((45 - 1) + 1) , new Random().nextInt((45 - 1) + 1)));
 
         set.add(new EvilBo("Evil7", 10, 10, 10, 5, new Random().nextInt((45 - 1) + 1) , new Random().nextInt((45 - 1) + 1)));
