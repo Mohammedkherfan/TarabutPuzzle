@@ -3,7 +3,7 @@
 ### Language and Framework
 
 * [JAVA] version 8
-* [MAVEN] 3.2.0
+* [MAVEN] version 3.2.0
 
 
 ## Instalation
@@ -22,12 +22,6 @@ java -jar TarabutPuzzle-1.0-SNAPSHOT.jar
 ```
 
 
-#### Main class
-
-Main class is `com.tarabut.puzzle.LaunchApplication` class
-
-
-
 #### TDD
 
 ```
@@ -40,3 +34,8 @@ mvn install
 ```
 mvn install -DskipTests
 ```
+
+
+#### Main class
+
+Main class is `com.tarabut.puzzle.LaunchApplication` class
