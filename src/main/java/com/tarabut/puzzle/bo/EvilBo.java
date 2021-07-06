@@ -9,12 +9,11 @@ public class EvilBo {
     private Integer defense;
     private Integer xPosition;
     private Integer yPosition;
-    private Boolean isBiggest;
 
     public EvilBo() {
     }
 
-    public EvilBo(String name, Integer health, Integer experienceValue, Integer attack, Integer defense, Integer xPosition, Integer yPosition, Boolean isBiggest) {
+    public EvilBo(String name, Integer health, Integer experienceValue, Integer attack, Integer defense, Integer xPosition, Integer yPosition) {
         this.name = name;
         this.health = health;
         this.experienceValue = experienceValue;
@@ -22,7 +21,6 @@ public class EvilBo {
         this.defense = defense;
         this.xPosition = xPosition;
         this.yPosition = yPosition;
-        this.isBiggest = isBiggest;
     }
 
     public String getName() {
@@ -79,13 +77,5 @@ public class EvilBo {
 
     public void setyPosition(Integer yPosition) {
         this.yPosition = yPosition;
-    }
-
-    public Boolean getBiggest() {
-        return isBiggest;
-    }
-
-    public void setBiggest(Boolean biggest) {
-        isBiggest = biggest;
     }
 }

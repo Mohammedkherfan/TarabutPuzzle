@@ -8,7 +8,7 @@ public class EvilBoTest {
 
     @Test
     public void whenCreateEvilBoObject_ThenShouldReturnObject() {
-        EvilBo evilBo = new EvilBo("name", 10, 10, 10, 10,  1, 49, Boolean.TRUE);
+        EvilBo evilBo = new EvilBo("name", 10, 10, 10, 10,  1, 49);
         Assert.assertNotNull(evilBo);
     }
 }
