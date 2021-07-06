@@ -9,7 +9,7 @@ public class FighterBo implements Serializable {
 
     private String name;
     private Gender gender;
-    public Level level;
+    private Level level;
     private Integer health;
     private Integer experienceValue;
     private Integer attack;

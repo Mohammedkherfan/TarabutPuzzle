@@ -31,7 +31,6 @@ public class ResumeGameProcessImpl implements Process {
         FighterBo fighterBo = FighterRepository.readFighter();
         Set<EvilBo> evils = evilService.buildEvilsCharacter();
         String [] [] layout = FighterRepository.readLayout();
-
         playService.play(scanner, fighterBo, evils, layout);
     }
 }
