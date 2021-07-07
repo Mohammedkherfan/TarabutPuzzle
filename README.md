@@ -39,3 +39,15 @@ mvn install -DskipTests
 #### Main class
 
 Main class is `com.tarabut.puzzle.LaunchApplication` class
+
+
+#### Info
+
+##### Component
+![alt text](tarabut_puzzle1.png)
+
+##### modeling
+![alt text](model.png)
+
+##### flow
+![alt text](flow.png)
